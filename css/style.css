@@ -1,0 +1,1995 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  background: transparent;
+  font-weight: normal;
+  text-decoration: none;
+  outline: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+ol,
+ul {
+  list-style: none;
+}
+del {
+  text-decoration: line-through;
+}
+@font-face {
+  font-family: "Gordita";
+  src: url("fonts/Gordita-Medium.woff2") format("woff2"),
+    url("fonts/Gordita-Regular.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gordita";
+  src: url("fonts/Gordita-Medium.woff2") format("woff2"),
+    url("fonts/Gordita-Medium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  font-family: "Gordita", Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  color: #1c2c40;
+  overflow-x: hidden;
+  min-width: 320px;
+  font-weight: 400;
+}
+input,
+textarea,
+select {
+  font-family: "Gordita", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+}
+
+a {
+  color: #1c2c40;
+}
+a:hover,
+.submit:hover {
+  filter: alpha(opacity = 85);
+  -moz-opacity: 0;
+  -khtml-opacity: 0.85;
+  opacity: 0.85;
+}
+.thumb {
+  display: block;
+}
+.thumb img {
+  display: block;
+  width: 100%;
+}
+p {
+  line-height: 1.6em;
+  font-size: 16px;
+  font-family: "Gordita", Arial;
+  font-weight: 400;
+}
+.hidden {
+  display: none;
+}
+br.clear {
+  clear: both;
+  line-height: 0;
+}
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1880px;
+}
+header {
+  padding: 30px 0px 140px 0px;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .container div.left {
+  width: 7%;
+}
+header .container div.left img {
+  width: 100%;
+  display: block;
+}
+header .container div.right {
+}
+header .container div.right ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .container div.right ul li:hover {
+  color: black;
+}
+header .container div.right ul li {
+  color: grey;
+  font-size: 20px;
+  margin-left: 85px;
+}
+header .container div.right ul li a {
+}
+header .container div.right ul li a.button {
+  background: blue;
+  padding: 18px 37px;
+  border-radius: 30px;
+  color: #fff;
+}
+#spotlight .container {
+  display: flex;
+  justify-content: space-between;
+}
+#spotlight .container div.bg {
+}
+#spotlight .container div.bg img {
+  display: none;
+}
+#spotlight .container .right {
+  width: 45%;
+  display: flex;
+  justify-content: space-between;
+}
+#spotlight .container .right div.one {
+  width: 32%;
+}
+#spotlight .container .right div.one img {
+  width: 100%;
+  display: block;
+  border-radius: 20px;
+}
+#spotlight .container .right div.two {
+  width: 32%;
+  margin-top: 75px;
+}
+#spotlight .container .right div.two img {
+  width: 100%;
+  display: block;
+  border-radius: 20px;
+}
+#spotlight .container .left {
+  width: 45%;
+}
+#spotlight .container .left h4 {
+}
+#spotlight .container .left h4 a {
+  color: rgb(15, 30, 228);
+  font-size: 20px;
+}
+#spotlight .container .left h1 {
+  font-size: 50px;
+  margin-top: 30px;
+  font-weight: 600;
+}
+#spotlight .container .left h1 span {
+  color: blue;
+}
+#spotlight .container .left p {
+  font-size: 20px;
+  margin: 30px 0 50px 0;
+  color: grey;
+  max-width: 383px;
+}
+#spotlight .container .left div.bottom {
+  width: 107%;
+  background: #fff;
+  box-shadow: 0px 0px 15px 4px rgb(190 190 190);
+  padding: 18px 25px;
+  border-radius: 8px;
+}
+#spotlight .container .left div.bottom form {
+}
+#spotlight .container .left div.bottom form input {
+  font-size: 18px;
+}
+#spotlight .container .left div.bottom form a.button {
+  display: inline-block;
+  background: #060fe6;
+  font-size: 21px;
+  font-weight: 500;
+  padding: 16px 38px 16px 38px;
+  border-radius: 8px;
+  margin-left: 131px;
+  color: #fff;
+}
+#spotlight .icons {
+  margin: 90px 0 90px 0;
+}
+#spotlight .icons ul {
+  display: flex;
+  justify-content: space-between;
+}
+#spotlight .icons ul li {
+  width: 9%;
+}
+
+#spotlight .icons ul li img {
+  width: 100%;
+  display: block;
+}
+#spotlight .icons ul li.hr {
+  border-top: 2px solid rgb(155, 148, 148);
+  color: rgb(155, 148, 148);
+  font-size: 15px;
+  margin: 20px;
+  width: 21%;
+}
+#container {
+  background-color: #f4f4ff;
+  padding: 80px 0px 80px 0px;
+}
+#container .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+#container div.achive {
+  width: 28%;
+}
+#container div.achive h2 {
+  font-size: 20px;
+  color: #7e8081;
+  margin-bottom: 20px;
+}
+#container div.achive h1 {
+  font-size: 35px;
+  font-weight: bold;
+  color: black;
+}
+#container div.built {
+  width: 28%;
+  display: flex;
+  margin-top: 40px;
+}
+#container div.built div.graph {
+  width: 50%;
+  margin-right: 10px;
+}
+#container div.built div.graph img {
+  width: 100%;
+  display: block;
+  background: #9578db;
+  border-radius: 52%;
+  padding: 13px;
+}
+#container div.built h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+#container div.built p {
+  font-size: 15px;
+}
+#container div.impact {
+  width: 28%;
+  margin-top: 40px;
+  display: flex;
+}
+#container div.impact div.imp {
+  width: 50%;
+  margin-right: 10px;
+}
+#container div.impact div.imp img {
+  width: 100%;
+  display: block;
+  background: #fc2352;
+  border-radius: 52%;
+  padding: 13px;
+}
+#container div.impact h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+#container div.impact p {
+  font-size: 15px;
+}
+#help {
+  padding: 90px 0 80px 0;
+}
+#help .wrapper {
+}
+#help .wrapper h1 {
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+}
+#help .wrapper h6 {
+  font-size: 13px;
+  text-align: center;
+  margin: 15px 0 50px 0;
+}
+#help .wrapper ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#help .wrapper ul li {
+  width: 28%;
+  background: #b8baba26;
+  border-radius: 10px;
+}
+#help .wrapper ul li div {
+  width: 25%;
+  margin: 32px 0px 30px 125px;
+}
+#help .wrapper ul li div.one img {
+  width: 100%;
+  display: block;
+  background: #d9ccf7;
+  border-radius: 50%;
+  padding: 15px;
+}
+#help .wrapper ul li div.two img {
+  width: 100%;
+  display: block;
+  background: #f19ea2;
+  border-radius: 50%;
+  padding: 15px;
+}
+#help .wrapper ul li div.three img {
+  width: 100%;
+  display: block;
+  background: #f3f0a0;
+  border-radius: 50%;
+  padding: 15px;
+}
+#help .wrapper ul li h3 {
+  font-size: 27px;
+  text-align: center;
+  margin-bottom: 13px;
+}
+#help .wrapper ul li p {
+  font-size: 17px;
+  margin: 0px 67px 71px 70px;
+}
+#help .wrapper div.button {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#help .wrapper div.button a.button {
+  color: #fff;
+  background: blue;
+  padding: 22px 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  font-size: 20px;
+}
+#schedule {
+  padding: 100px 0px 100px 0px;
+}
+#schedule .wrapper {
+}
+#schedule .wrapper .container {
+  display: flex;
+  justify-content: space-between;
+}
+#schedule .wrapper .container .left {
+  width: 46%;
+}
+#schedule .wrapper .container .left img {
+  width: 100%;
+  display: block;
+}
+#schedule .wrapper .container .right {
+  width: 43%;
+  margin-top: 137px;
+}
+#schedule .wrapper .container .right h4 {
+  font-size: 18px;
+  color: #f19f32;
+  margin-bottom: 10px;
+}
+#schedule .wrapper .container .right h2 {
+  color: black;
+  font-size: 35px;
+  width: 83%;
+}
+
+#schedule .wrapper .container .right p {
+  font-size: 14px;
+  color: #7e8081;
+  width: 100%;
+  margin: 20px 0px 20px 0px;
+}
+#schedule .wrapper .container .right small {
+  font-size: 15px;
+  font-weight: 500;
+}
+#schedule .wrapper .container .right small a {
+  color: #0645ef;
+}
+
+#monitor {
+  padding: 100px 0px 100px 0px;
+}
+#monitor .wrapper {
+}
+#monitor .wrapper .container {
+  display: flex;
+  justify-content: space-between;
+}
+#monitor .wrapper .container .right {
+  width: 45%;
+  margin-top: 137px;
+}
+#monitor .wrapper .container .right h4 {
+  font-size: 18px;
+  color: #f19f32;
+  margin-bottom: 10px;
+}
+#monitor .wrapper .container .right h2 {
+  color: black;
+  font-size: 35px;
+  width: 68%;
+}
+
+#monitor .wrapper .container .right p {
+  font-size: 14px;
+  color: #7e8081;
+  width: 73%;
+  margin: 20px 0px 20px 0px;
+}
+#monitor .wrapper .container .right small {
+  font-size: 15px;
+  font-weight: 500;
+}
+#monitor .wrapper .container .right small a {
+  color: #0645ef;
+}
+#monitor .wrapper .container .left {
+  width: 48%;
+}
+#monitor .wrapper .container .left img {
+  width: 100%;
+  display: block;
+}
+
+#pricing {
+  background: #f3fdfe;
+  padding: 100px;
+  position: relative;
+}
+#pricing div.top {
+  background: #fff;
+  width: 42%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 42px;
+}
+#pricing div.top h1 {
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+#pricing div.top ul {
+  display: flex;
+  justify-content: space-around;
+}
+#pricing div.top ul li {
+}
+#pricing div.top ul li small {
+  color: #878787;
+  font-weight: 500;
+}
+#pricing div.top ul li h4 {
+  color: #080a55;
+  font-size: 22px;
+  margin-top: 10px;
+  font-weight: 700;
+}
+#pricing div.top p {
+  text-align: left;
+  margin-top: 30px;
+  color: #818181;
+  margin-bottom: 30px;
+}
+#pricing div.top div.line {
+  border: 7px solid #080a55;
+  background: #080a55;
+  position: relative;
+  border-radius: 7px;
+}
+#pricing div.top div.round {
+  border: 12px solid #fff;
+  width: 1%;
+  border-radius: 50%;
+  bottom: 138px;
+  left: 653px;
+  position: absolute;
+}
+#pricing div.bottom {
+  width: 32%;
+  background: #fff;
+  box-shadow: 0px 0px 15px 4px rgb(190 190 190);
+  position: absolute;
+  right: 293px;
+  bottom: 36px;
+  padding: 14px 15px;
+  border-radius: 8px;
+}
+#pricing div.bottom form {
+}
+#pricing div.bottom form input {
+  font-size: 15px;
+}
+#pricing div.bottom form a.button {
+  display: inline-block;
+  background: #060fe6;
+  font-size: 21px;
+  font-weight: 500;
+  padding: 16px 40px;
+  border-radius: 8px;
+  margin-left: 19px;
+  color: #fff;
+}
+#web {
+  padding: 100px 0px 100px 0px;
+}
+#web .wrapper {
+}
+#web .wrapper .container {
+  display: flex;
+  justify-content: space-between;
+}
+#web .wrapper .container .left {
+  width: 30%;
+  margin-top: 60px;
+}
+#web .wrapper .container .left h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+#web .wrapper .container .left p {
+  font-size: 17px;
+  color: gray;
+  margin-bottom: 20px;
+}
+#web .wrapper .container .left ul {
+}
+#web .wrapper .container .left ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+#web .wrapper .container .left ul li div {
+  width: 30px;
+  margin-right: 15px;
+}
+#web .wrapper .container .left ul li div img {
+  width: 100%;
+  display: block;
+  border-radius: 15px;
+  padding: 5px;
+  background: #6f6fec;
+}
+#web .wrapper .container .left ul li div h4 {
+  font-size: 17px;
+  color: gray;
+}
+#web .wrapper .container .left div.button {
+  margin-top: 55px;
+}
+#web .wrapper .container .left div.button a.button {
+  background: blue;
+  padding: 20px 40px;
+  border-radius: 30px;
+  color: #fff;
+  margin-top: 30px;
+}
+#web .wrapper .container .right {
+  width: 50%;
+}
+#web .wrapper .container .right ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#web .wrapper .container .right ul li {
+  width: 40%;
+  margin-bottom: 50px;
+}
+#web .wrapper .container .right ul li div {
+  width: 30%;
+}
+#web .wrapper .container .right ul li div img {
+  width: 100%;
+  display: block;
+}
+#web .wrapper .container .right ul li h1 {
+  font-size: 25px;
+  margin: 30px 0px 30px 0px;
+}
+#web .wrapper .container .right ul li p {
+  font-size: 18px;
+  width: 224px;
+  margin-bottom: 20px;
+}
+#web .wrapper .container .right ul li h5 {
+  font-size: 15px;
+  color: rgb(155, 13, 250);
+}
+#clint {
+  padding: 100px 0px 80px 0px;
+}
+#clint .wrapper {
+}
+#clint .wrapper .top {
+}
+#clint .wrapper .top h1 {
+  font-size: 40px;
+  text-align: center;
+}
+#clint .wrapper .top p {
+  text-align: center;
+  font-size: 18px;
+  margin: 20px 0 50px 0;
+}
+#clint .wrapper .bottom {
+}
+#clint .wrapper .bottom ul {
+  display: flex;
+  justify-content: space-between;
+}
+#clint .wrapper .bottom ul li {
+  width: 30%;
+}
+#clint .wrapper .bottom ul li div {
+  width: 15%;
+  margin: 0 auto;
+}
+#clint .wrapper .bottom ul li div img {
+  width: 100%;
+  display: block;
+  border-radius: 30px;
+}
+#clint .wrapper .bottom ul li div.icons {
+  display: flex;
+  width: 5%;
+  margin: 20px 0px 20px 136px;
+}
+#clint .wrapper .bottom ul li div.icons img {
+  width: 100%;
+  display: block;
+}
+#clint .wrapper .bottom ul li h3 {
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+#clint .wrapper .bottom ul li p {
+  color: grey;
+  text-align: center;
+  width: 91%;
+}
+#subscribe {
+  width: 80%;
+  margin: 0px auto;
+  padding: 50px 0px 100px 0px;
+}
+#subscribe section.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 70px 90px;
+  background: rgb(77, 83, 229);
+  align-items: center;
+  border-radius: 20px;
+}
+#subscribe section.container div.left {
+  text-align: center;
+  width: 45%;
+}
+#subscribe section.container div.left h2 {
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+#subscribe section.container div.left p {
+  color: rgb(255, 255, 255);
+  width: 70%;
+  margin: 0px auto;
+}
+#subscribe section.container div.right {
+  width: 45%;
+  position: relative;
+}
+#subscribe section.container div.right form {
+  display: flex;
+  align-items: center;
+}
+#subscribe section.container div.right form input {
+  width: 69%;
+  padding: 27px 15px;
+  font-size: 15px;
+  font-family: "Gordita light";
+  background: rgb(255, 255, 255);
+  border-radius: 15px 0px 0px 15px;
+  text-align: left;
+}
+#subscribe section.container div.right form button {
+  color: rgb(255, 255, 255);
+  background: rgb(47, 181, 82);
+  padding: 28px 18px;
+  border-radius: 0px 15px 15px 0px;
+  text-align: left;
+  width: 140px;
+}
+#subscribe section.container div.right div.box {
+  background: rgb(255, 255, 255);
+  padding: 8px;
+  width: 8%;
+  position: absolute;
+  border-radius: 10px;
+  right: 18px;
+  top: 17px;
+}
+#subscribe section.container div.right div.box div.arrow {
+}
+#subscribe section.container div.right div.box div.arrow img {
+  display: block;
+  width: 100%;
+}
+/* footer */
+footer {
+  padding: 150px 0px 100px 0px;
+  background: #b8baba26;
+}
+footer section.wrapper {
+}
+footer section.top ul li a {
+  color: #7d7d7d;
+  font-size: 16px;
+}
+footer section.top ul li {
+  margin-bottom: 20px;
+}
+footer section.top h3 {
+  margin-bottom: 20px;
+}
+footer section.top {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #7d7d7d;
+  padding-bottom: 40px;
+}
+footer section.top div.one {
+  width: 28%;
+}
+footer section.top div.one h1 {
+  display: flex;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+footer section.top div.one h1 a {
+  width: 15%;
+  display: inline-block;
+  margin-right: 15px;
+}
+
+footer section.top div.one h1 a img {
+  width: 100%;
+  display: block;
+}
+
+footer section.top p {
+  color: #7d7d7d;
+  width: 85%;
+}
+
+footer section.top small {
+  color: #0f000f;
+  font-size: 23px;
+  font-weight: 600;
+}
+footer section.top h3 {
+  color: #0f000f;
+  font-size: 23px;
+  font-weight: 600;
+}
+footer section.top div.two h3 {
+}
+
+footer section.top div.two ul {
+}
+
+footer section.top div.two ul li {
+}
+
+footer section.top ul li a {
+  font-size: 16px;
+}
+
+footer section.top div.three {
+}
+
+footer section.top div.three h3 {
+}
+
+footer section.top div.three ul {
+}
+
+footer section.top div.three ul li {
+}
+
+footer section.top div.three ul li a {
+}
+
+footer section.top div.four {
+}
+
+footer section.top div.four h3 {
+}
+
+footer section.top div.four ul {
+}
+
+footer section.top div.four ul li {
+}
+
+footer section.top div.four ul li a {
+}
+
+footer section.top div.fix {
+}
+
+footer section.top div.fix h3 {
+}
+
+footer section.top div.fix ul {
+}
+
+footer section.top div.fix ul li {
+}
+
+footer section.top div.fix ul li a {
+}
+
+footer section.bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+footer section.bottom p {
+  color: #7d7d7d;
+}
+footer section.bottom div.left {
+}
+
+footer section.bottom div.left p {
+}
+
+footer section.bottom div.right {
+}
+
+footer section.bottom div.right p {
+}
+/* footer end */
+@media all and (max-width: 1380px) {
+}
+@media all and (max-width: 1280px) {
+  header .container div.right ul li {
+    color: grey;
+    font-size: 20px;
+    margin-left: 50px;
+  }
+  #spotlight .container .left h1 {
+    font-size: 37px;
+    margin-top: 30px;
+    font-weight: 600;
+  }
+  #spotlight .container .left p {
+    font-size: 15px;
+    margin: 30px 0 50px 0;
+    color: grey;
+    max-width: 383px;
+  }
+  #spotlight .container .left div.bottom {
+    width: 86%;
+    background: #fff;
+    box-shadow: 0px 0px 15px 4px rgb(190 190 190);
+    padding: 6px 1px;
+    border-radius: 8px;
+  }
+  #spotlight .container .left div.bottom form input {
+    font-size: 15px;
+  }
+  #spotlight .container .left div.bottom form a.button {
+    display: inline-block;
+    background: #060fe6;
+    font-size: 21px;
+    font-weight: 500;
+    padding: 16px 38px 16px 38px;
+    border-radius: 8px;
+    margin-left: 131px;
+    color: #fff;
+  }
+  #spotlight .icons ul li.hr {
+    width: 28%;
+  }
+  #container div.achive h1 {
+    font-size: 26px;
+  }
+  #help .wrapper h1 {
+    font-size: 42px;
+  }
+  #help .wrapper ul li div {
+    width: 25%;
+    margin: 30px 0px 30px 89px;
+  }
+  #help .wrapper ul li h3 {
+    font-size: 23px;
+  }
+  #help .wrapper ul li p {
+    font-size: 14px;
+    margin: 0px 28px 71px 29px;
+  }
+  #help .wrapper div.button a.button {
+    padding: 19px 23px;
+    font-size: 18px;
+  }
+  #pricing div.top {
+    background: #fff;
+    width: 62%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 42px;
+  }
+  #pricing div.bottom {
+    width: 31%;
+    background: #fff;
+    box-shadow: 0px 0px 15px 4px rgb(190 190 190);
+    position: absolute;
+    right: 146px;
+    bottom: 20px;
+    padding: 15px 31px;
+    border-radius: 8px;
+  }
+  #pricing div.bottom form a.button {
+    display: inline-block;
+    background: #060fe6;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 15px 48px;
+    border-radius: 8px;
+    margin-left: 97px;
+    color: #fff;
+  }
+  #pricing div.bottom form input {
+    font-size: 13px;
+  }
+  #clint .wrapper .bottom ul li div.icons {
+    margin: 20px 0px 20px 95px;
+  }
+  #subscribe {
+    width: 80%;
+  }
+  #subscribe section.container {
+    padding: 30px 36px;
+    border-radius: 20px;
+  }
+  #subscribe section.container div.left h2 {
+    color: rgb(255, 255, 255);
+    font-size: 29px;
+    margin-bottom: 18px;
+  }
+}
+@media all and (max-width: 1080px) {
+  header .container div.right ul li {
+    color: grey;
+    font-size: 20px;
+    margin-left: 32px;
+  }
+  header .container div.right ul li a.button {
+    background: blue;
+    padding: 13px 27px;
+    border-radius: 30px;
+    color: #fff;
+  }
+  #spotlight .container .left h1 {
+    font-size: 35px;
+    margin-top: 30px;
+    font-weight: 600;
+  }
+  #spotlight .container .left div.bottom {
+    width: 80%;
+    background: #fff;
+    box-shadow: 0px 0px 15px 4px rgb(190 190 190);
+    padding: 8px 1px;
+    border-radius: 8px;
+  }
+  #spotlight .container .left div.bottom form input {
+    font-size: 12px;
+    margin-left: 15px;
+  }
+  #spotlight .container .left div.bottom form a.button {
+    display: inline-block;
+    background: #060fe6;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 13px 15px 13px 20px;
+    border-radius: 8px;
+    margin-left: 160px;
+    color: #fff;
+  }
+  #spotlight .icons ul li.hr {
+    font-size: 14px;
+  }
+  #help .wrapper ul li p {
+    font-size: 14px;
+    margin: 0px 11px 36px 25px;
+  }
+  #help .wrapper div.button a.button {
+    padding: 15px 20px;
+    font-size: 14px;
+  }
+  #pricing div.bottom {
+    width: 27%;
+    background: #fff;
+    box-shadow: 0px 0px 15px 4px rgb(190 190 190);
+    position: absolute;
+    right: 159px;
+    bottom: 20px;
+    padding: 10px 18px;
+    border-radius: 8px;
+  }
+  #pricing div.bottom form a.button {
+    display: inline-block;
+    background: #060fe6;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin-left: 117px;
+    color: #fff;
+  }
+  #web .wrapper .container .left p {
+    font-size: 12px;
+    color: gray;
+    margin-bottom: 20px;
+  }
+  #web .wrapper .container .left h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  #web .wrapper .container .right ul li {
+    width: 40%;
+    margin-bottom: 45px;
+  }
+  #clint .wrapper .bottom ul li div.icons {
+    margin: 20px 0px 20px 90px;
+  }
+  #subscribe section.container {
+    padding: 20px 22px;
+    border-radius: 20px;
+  }
+  #subscribe section.container div.left p {
+    color: rgb(255, 255, 255);
+    width: 73%;
+    margin: 0px auto;
+  }
+  #subscribe section.container div.right form input {
+    width: 90%;
+    padding: 20px 23px;
+    font-size: 15px;
+    font-family: "Gordita light";
+    background: rgb(255, 255, 255);
+    border-radius: 15px 0px 0px 15px;
+    text-align: left;
+  }
+  #subscribe section.container div.right form button {
+    color: rgb(255, 255, 255);
+    background: rgb(47, 181, 82);
+    padding: 21px 18px;
+    border-radius: 0px 15px 15px 0px;
+    text-align: left;
+    width: 140px;
+  }
+  #subscribe section.container div.right div.box {
+    background: rgb(255, 255, 255);
+    padding: 8px;
+    width: 7%;
+    position: absolute;
+    border-radius: 10px;
+    right: 10px;
+    top: 17px;
+  }
+}
+@media all and (max-width: 980px) {
+  header .container div.right ul li {
+    display: none;
+  }
+  header .container div.right ul li:last-child {
+    display: block;
+  }
+  #spotlight .container .left div.bottom {
+    width: 93%;
+  }
+  #spotlight .container .left div.bottom form a.button {
+    font-size: 11px;
+    padding: 10px;
+    margin-left: 0px;
+    color: #fff;
+  }
+  #spotlight .container .left h1 {
+    font-size: 25px;
+  }
+  #spotlight .icons ul li.hr {
+    font-size: 11px;
+  }
+  #container div.built {
+    width: 35%;
+  }
+  #container div.impact {
+    width: 35%;
+  }
+  #container div.built div.graph {
+    width: 70%;
+  }
+  #container div.impact div.imp {
+    width: 70%;
+  }
+  #container div.built p {
+    font-size: 12px;
+  }
+  #container div.impact p {
+    font-size: 12px;
+  }
+  #container div.achive h1 {
+    font-size: 18px;
+  }
+  #help .wrapper h1 {
+    font-size: 29px;
+  }
+  #help .wrapper ul li p {
+    font-size: 12px;
+  }
+  #help .wrapper ul li h3 {
+    font-size: 15px;
+  }
+  #help .wrapper ul li div {
+    width: 25%;
+    margin: 19px auto;
+  }
+  #help .wrapper ul li {
+    width: 30%;
+  }
+  #schedule {
+    padding-top: 50px;
+  }
+  #schedule .wrapper .container .right h2 {
+    font-size: 20px;
+  }
+  #schedule .wrapper .container .right {
+    margin-top: 60px;
+  }
+  #schedule .wrapper .container .right p {
+    font-size: 12px;
+  }
+  #monitor .wrapper .container .right h2 {
+    font-size: 20px;
+  }
+  #monitor .wrapper .container .right p {
+    font-size: 12px;
+  }
+  #monitor .wrapper .container .right {
+    width: 51%;
+    margin-top: 50px;
+  }
+  #pricing div.top {
+    width: 90%;
+  }
+  #pricing div.top div.round {
+    bottom: 138px;
+  }
+  #pricing div.bottom {
+    width: 50%;
+  }
+  #pricing div.bottom form a.button {
+    margin-left: 75px;
+  }
+  #pricing div.bottom {
+    right: 43px;
+    bottom: 62px;
+  }
+  #web {
+    padding-bottom: 50px;
+  }
+  #web .wrapper .container {
+    flex-wrap: wrap;
+  }
+  #web .wrapper .container .left {
+    width: 75%;
+    margin: 0 auto;
+  }
+  #web .wrapper .container .left p {
+    font-size: 16px;
+  }
+  #web .wrapper .container .right {
+    width: 75%;
+    margin: 0 auto;
+  }
+  #web .wrapper .container .right ul {
+    padding-top: 80px;
+  }
+  #clint .wrapper .bottom ul li {
+    width: 30%;
+  }
+  #clint .wrapper .bottom ul li p {
+    font-size: 15px;
+  }
+  #clint .wrapper .bottom ul li div {
+    width: 26%;
+  }
+  #clint .wrapper .bottom ul li div.icons {
+    width: 8%;
+    margin: 25px 0px 20px 56px;
+  }
+  #clint .wrapper .bottom ul li p {
+    font-size: 12px;
+    margin: 0 auto;
+  }
+  #subscribe section.container div.left h2 {
+    color: rgb(255, 255, 255);
+    font-size: 26px;
+    margin-bottom: 18px;
+  }
+  #subscribe section.container div.left p {
+    color: rgb(255, 255, 255);
+    width: 96%;
+    margin: 0px auto;
+  }
+  #subscribe section.container div.right div.box {
+    background: rgb(255, 255, 255);
+    padding: 5px;
+    width: 7%;
+    position: absolute;
+    border-radius: 10px;
+    right: 6px;
+    top: 19px;
+  }
+  footer {
+    padding: 30px 0px;
+    background: #b8baba26;
+  }
+  footer section.top div.one {
+    width: 26%;
+  }
+  footer section.top div.one h1 a {
+    width: 20%;
+    display: inline-block;
+    margin-right: 15px;
+  }
+  footer section.top small {
+    color: #0f000f;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  footer section.top p {
+    color: #7d7d7d;
+    width: 94%;
+    font-size: 12px;
+  }
+  footer section.top div.two h3 {
+    font-size: 20px;
+  }
+  footer section.top ul li a {
+    font-size: 15px;
+  }
+  footer section.top div.three h3 {
+    font-size: 20px;
+  }
+  footer section.top ul li a {
+    font-size: 13px;
+  }
+}
+@media all and (max-width: 768px) {
+  header .container div.right ul li a.button {
+    background: blue;
+    padding: 10px 20px;
+    border-radius: 30px;
+    color: #fff;
+  }
+  #spotlight .container .left div.bottom {
+    width: 85%;
+  }
+  #spotlight .container .left div.bottom form a.button {
+    font-size: 11px;
+    padding: 14px;
+    color: #fff;
+    margin: -15px 0px 6px 136px;
+  }
+  #spotlight .container .left div.bottom {
+    width: 100%;
+  }
+  #spotlight .container .left div.bottom form {
+    width: 100%;
+  }
+  #container {
+    background-color: #f4f4ff;
+    padding: 80px 0px 80px 0px;
+  }
+  #container div.achive {
+    width: 30%;
+  }
+  #container div.achive h2 {
+    font-size: 16px;
+    color: #7e8081;
+    margin-bottom: 20px;
+  }
+  #container div.achive h1 {
+    font-size: 12px;
+  }
+  #container div.built {
+    display: flex;
+    margin-top: 1px;
+  }
+  #container div.impact {
+    margin-top: 1px;
+    display: flex;
+  }
+  #container div.built div.graph img {
+    width: 100%;
+    display: block;
+    background: #9578db;
+    border-radius: 52%;
+    padding: 10px;
+  }
+  #container div.impact div.imp img {
+    width: 100%;
+    display: block;
+    background: #fc2352;
+    border-radius: 52%;
+    padding: 10px;
+  }
+  #pricing div.bottom form a.button {
+    margin-left: 175px;
+  }
+  #web .wrapper .container .left {
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  #web .wrapper .container .left p {
+    font-size: 13px;
+  }
+  #web .wrapper .container .left ul li div {
+    width: 20px;
+    margin-right: 15px;
+  }
+  #web .wrapper .container .left div.button a.button {
+    background: blue;
+    padding: 14px 21px;
+    border-radius: 30px;
+    color: #fff;
+    margin-top: 30px;
+  }
+  #web .wrapper .container .right ul li {
+    width: 34%;
+    margin-bottom: 35px;
+  }
+  #web .wrapper .container .right ul li div {
+    width: 25%;
+  }
+  #web .wrapper .container .right ul li h1 {
+    font-size: 20px;
+    margin: 30px 0px 30px 0px;
+  }
+  #web .wrapper .container .right ul li p {
+    font-size: 15px;
+    width: 186px;
+    margin-bottom: 20px;
+  }
+  #web .wrapper .container .right ul li h5 {
+    font-size: 12px;
+    color: rgb(155, 13, 250);
+  }
+  #clint .wrapper .top h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+  #clint .wrapper .top p {
+    text-align: center;
+    font-size: 14px;
+    margin: 20px 0 50px 0;
+  }
+  #clint .wrapper .bottom ul li div.icons {
+    width: 8%;
+    margin: 25px 2px 20px 46px;
+  }
+  #clint .wrapper .bottom ul li h3 {
+    font-size: 23px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  #clint .wrapper .bottom ul li p {
+    font-size: 11px;
+    margin: 0 auto;
+  }
+  #subscribe section.container {
+    padding: 15px 10px;
+    border-radius: 20px;
+  }
+  #subscribe section.container div.left h2 {
+    color: rgb(255, 255, 255);
+    font-size: 23px;
+    margin-bottom: 18px;
+  }
+  #subscribe section.container div.left p {
+    color: rgb(255, 255, 255);
+    width: 110%;
+    font-size: 10px;
+    margin: 0px auto;
+  }
+  #subscribe section.container div.right form input {
+    width: 90%;
+    padding: 16px 10px;
+    font-size: 11px;
+    font-family: "Gordita light";
+    background: rgb(255, 255, 255);
+    border-radius: 15px 0px 0px 15px;
+    text-align: left;
+  }
+  #subscribe section.container div.right form button {
+    color: rgb(255, 255, 255);
+    background: rgb(47, 181, 82);
+    padding: 17px 18px;
+    border-radius: 0px 15px 15px 0px;
+    text-align: left;
+    width: 125px;
+    font-size: 11px;
+  }
+  #subscribe section.container div.right div.box {
+    background: rgb(255, 255, 255);
+    padding: 5px;
+    width: 9%;
+    position: absolute;
+    border-radius: 10px;
+    right: 6px;
+    top: 12px;
+  }
+  footer section.top small {
+    color: #0f000f;
+    font-size: 15px;
+    font-weight: 600;
+  }
+  footer section.top h3 {
+    color: #0f000f;
+    font-size: 18px;
+    font-weight: 600;
+  }
+}
+@media all and (max-width: 640px) {
+  #spotlight .container {
+    flex-wrap: wrap;
+  }
+  #spotlight .container div.bg {
+  }
+  #spotlight .container div.bg img {
+    display: block;
+    width: 100%;
+  }
+  #spotlight .container .right {
+    display: none;
+  }
+  #spotlight .container .left {
+    width: 100%;
+  }
+  #pricing div.top div.round {
+    bottom: 138px;
+    display: none;
+  }
+  header .container div.right ul li a.button {
+    background: blue;
+    padding: 10px 15px;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 10px;
+  }
+  #spotlight .container .left {
+    width: 100%;
+    text-align: center;
+    margin-top: 15px;
+  }
+  #spotlight .container .left div.bottom form input {
+    font-size: 11px;
+  }
+  #spotlight .container .left div.bottom form a.button {
+    font-size: 11px;
+    padding: 14px;
+    color: #fff;
+    margin: 0px 0px 6px 100px;
+  }
+  #spotlight .icons {
+    margin: 40px 0;
+  }
+  #spotlight .icons ul li.hr {
+    font-size: 7px;
+  }
+  #container .wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  #container div.achive {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  #container div.built {
+    display: flex;
+    margin-top: 1px;
+    width: 47%;
+    text-align: center;
+  }
+  #container div.impact {
+    display: flex;
+    margin-top: 1px;
+    width: 47%;
+    text-align: center;
+  }
+  #help {
+    padding: 90px 0 50px 0;
+  }
+  #help .wrapper h1 {
+    font-size: 23px;
+  }
+  #help .wrapper h6 {
+    font-size: 13px;
+    text-align: center;
+    margin: 15px 0 50px 0;
+  }
+  #help .wrapper ul li div {
+    width: 46%;
+    margin: 19px auto;
+  }
+  #help .wrapper ul li p {
+    font-size: 11px;
+    text-align: center;
+  }
+  #help .wrapper div.button a.button {
+    padding: 13px 15px;
+    font-size: 10px;
+  }
+  #schedule .wrapper .container .right small {
+    font-size: 10px;
+    font-weight: 500;
+  }
+  #schedule .wrapper .container .right {
+    margin-top: 10px;
+  }
+  #schedule .wrapper .container .right h4 {
+    font-size: 15px;
+    color: #f19f32;
+    margin-bottom: 10px;
+  }
+  #schedule .wrapper .container .right h2 {
+    font-size: 14px;
+  }
+  #schedule .wrapper .container .right p {
+    font-size: 9px;
+  }
+  #schedule .wrapper .container .right small {
+    font-size: 10px;
+    font-weight: 500;
+  }
+  #monitor {
+    padding: 0px;
+    padding-bottom: 30px;
+  }
+  #monitor .wrapper .container .right {
+    width: 51%;
+    margin-top: 10px;
+  }
+  #monitor .wrapper .container .right h4 {
+    font-size: 15px;
+    color: #f19f32;
+    margin-bottom: 10px;
+  }
+  #monitor .wrapper .container .right h2 {
+    font-size: 14px;
+  }
+  #monitor .wrapper .container .right p {
+    font-size: 9px;
+  }
+  #monitor .wrapper .container .right small {
+    font-size: 10px;
+    font-weight: 500;
+  }
+  #pricing {
+    background: #f3fdfe;
+    padding: 50px;
+    position: relative;
+  }
+  #pricing div.top {
+    width: 100%;
+  }
+  #pricing div.top h1 {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  #pricing div.bottom {
+    right: 27px;
+    bottom: 0px;
+    width: 40%;
+  }
+  #pricing div.bottom {
+    right: 27px;
+    bottom: 4px;
+    width: 40%;
+    padding: 3px;
+  }
+  #pricing div.bottom form a.button {
+    margin-left: 75px;
+  }
+  #web .wrapper .container .left ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 15px;
+  }
+  #web .wrapper .container .left ul li div {
+    width: 18px;
+    margin-right: 15px;
+  }
+  #web .wrapper .container .left div.button {
+    margin-top: 40px;
+    text-align: left;
+  }
+  #web .wrapper .container .left div.button a.button {
+    background: blue;
+    padding: 11px 12px;
+    border-radius: 30px;
+    color: #fff;
+    margin-top: 30px;
+  }
+  #web .wrapper .container .right ul {
+    padding-top: 50px;
+  }
+  #web .wrapper .container .right ul li {
+    width: 51%;
+    margin: 15px 60px;
+    text-align: center;
+  }
+  #web .wrapper .container .right ul li div {
+    width: 25%;
+    margin: 0 auto;
+  }
+  #web .wrapper .container .right ul li h1 {
+    font-size: 20px;
+    margin: 10px 0px;
+  }
+  #web .wrapper .container .right ul li p {
+    font-size: 13px;
+    width: 162px;
+    margin-bottom: 10px;
+  }
+  #clint {
+    padding-bottom: 20px;
+  }
+  #clint .wrapper .bottom ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  #clint .wrapper .bottom ul li {
+    width: 55%;
+    margin: 0 auto;
+  }
+  #clint .wrapper .bottom ul li div.icons {
+    width: 6%;
+    margin: 8px 2px 7px 71px;
+  }
+  #clint .wrapper .bottom ul li h3 {
+    font-size: 17px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  #clint .wrapper .bottom ul li p {
+    font-size: 8px;
+    margin: 0 auto;
+  }
+  #clint .wrapper .bottom ul li div {
+    width: 26%;
+    margin-top: 15px;
+  }
+  #clint .wrapper .top p {
+    text-align: center;
+    font-size: 14px;
+    margin: 20px 0px;
+  }
+  #subscribe section.container {
+    padding: 8px 13px;
+    border-radius: 20px;
+  }
+  #subscribe section.container div.left h2 {
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+    margin-bottom: 8px;
+  }
+  #subscribe section.container div.left p {
+    color: rgb(255, 255, 255);
+    width: 83%;
+    font-size: 8px;
+    margin: 0px auto;
+  }
+  #subscribe section.container div.right form input {
+    width: 90%;
+    padding: 16px 10px;
+    font-size: 11px;
+    font-family: "Gordita light";
+    background: rgb(255, 255, 255);
+    border-radius: 15px 0px 0px 15px;
+    text-align: left;
+  }
+  #subscribe section.container div.right form button {
+    color: rgb(255, 255, 255);
+    background: rgb(47, 181, 82);
+    padding: 19px 18px;
+    border-radius: 0px 15px 15px 0px;
+    text-align: left;
+    width: 83px;
+    font-size: 6px;
+  }
+  #subscribe section.container div.right div.box {
+    background: rgb(255, 255, 255);
+    padding: 3px;
+    width: 7%;
+    position: absolute;
+    border-radius: 10px;
+    right: 8px;
+    top: 17px;
+  }
+  footer section.top {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #7d7d7d;
+    padding-bottom: 40px;
+    flex-wrap: wrap;
+  }
+  footer section.top div.one {
+    width: 36%;
+  }
+  footer section.top p {
+    color: #7d7d7d;
+    width: 117%;
+    font-size: 10px;
+  }
+  footer section.top div.one h1 a {
+    width: 20%;
+    display: inline-block;
+    margin-right: 8px;
+  }
+  footer section.top small {
+    color: #0f000f;
+    font-size: 13px;
+    font-weight: 600;
+  }
+  footer section.top h3 {
+    color: #0f000f;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  footer section.top ul li {
+    margin-bottom: 10px;
+  }
+  footer section.bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 13px;
+  }
+  footer section.bottom p {
+    color: #7d7d7d;
+    font-size: 13px;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .wrapper {
+    width: 95%;
+    margin: 0 auto;
+    max-width: 1880px;
+  }
+  header {
+    padding: 35px 0px;
+  }
+  #spotlight .container .left div.bottom form a.button {
+    margin: 0px;
+  }
+  #spotlight .container .left div.bottom form a.button {
+    font-size: 13px;
+    padding: 14px 38px;
+  }
+  #spotlight .icons ul {
+    display: none;
+  }
+  #container div.built p {
+    display: none;
+  }
+  #container div.impact p {
+    display: none;
+  }
+  #help .wrapper ul {
+    flex-wrap: wrap;
+  }
+  #help .wrapper ul li {
+    width: 100%;
+  }
+  #help .wrapper ul li div {
+    width: 20%;
+  }
+  #pricing div.bottom {
+    display: none;
+  }
+  #pricing div.top ul li h4 {
+    color: #080a55;
+    font-size: 14px;
+    margin-top: 10px;
+    font-weight: 700;
+  }
+  #pricing div.top p {
+    text-align: center;
+    margin-top: 30px;
+    color: #818181;
+    margin-bottom: 15px;
+  }
+  #web .wrapper .container .left div.button a.button {
+    background: blue;
+    padding: 10px 18px;
+    border-radius: 30px;
+    color: #fff;
+    margin: 78px;
+    font-size: 10px;
+  }
+  #web .wrapper .container .right ul {
+    padding-top: 20px;
+  }
+  #web .wrapper .container .right ul li p {
+    font-size: 12px;
+    width: 149px;
+    margin-bottom: 10px;
+  }
+  #web .wrapper .container .right ul li h5 {
+    font-size: 11px;
+    color: rgb(155, 13, 250);
+  }
+  #clint {
+    padding-top: 20px;
+  }
+  #clint .wrapper .bottom ul li div.icons {
+    width: 6%;
+    margin: 8px 2px 7px 67px;
+  }
+  #subscribe section.container {
+    padding: 8px 13px;
+    border-radius: 20px;
+    flex-wrap: wrap;
+  }
+  #subscribe section.container div.left {
+    text-align: center;
+    width: 100%;
+  }
+  #subscribe section.container div.right {
+    width: 100%;
+  }
+  #subscribe section.container div.right form button {
+    color: rgb(255, 255, 255);
+    background: rgb(47, 181, 82);
+    padding: 16px 18px;
+    border-radius: 0px 15px 15px 0px;
+    text-align: left;
+    width: 83px;
+    font-size: 11px;
+  }
+  #subscribe section.container div.right div.box {
+    display: none;
+  }
+  footer section.top div.one {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  footer section.top div.two {
+    width: 23%;
+    font-size: 8px;
+  }
+  footer section.top div.three {
+    width: 23%;
+    font-size: 8px;
+  }
+  footer section.top div.four {
+    width: 23%;
+    font-size: 8px;
+  }
+  footer section.top div.five {
+    width: 23%;
+    font-size: 8px;
+  }
+  footer section.top div.fix {
+    width: 23%;
+    font-size: 8px;
+  }
+  footer section.top div.two h3 {
+    font-size: 13px;
+  }
+  footer section.top div.three h3 {
+    font-size: 13px;
+  }
+  footer section.top div.four h3 {
+    font-size: 13px;
+  }
+  footer section.top div.five h3 {
+    font-size: 13px;
+  }
+
+  footer section.top div.fix h3 {
+    font-size: 13px;
+  }
+  
+  footer section.top div.two ul li a{
+    font-size: 10px;
+  }
+  footer section.top div.three ul li a{
+    font-size: 10px;
+  }
+  footer section.top div.four ul li a {
+    font-size: 10px;
+  }
+  footer section.top div.five ul li a {
+    font-size: 10px;
+  }
+
+  footer section.top div.fix ul li a{
+    font-size: 10px;
+  }
+  footer section.top p {
+    width: 100%;
+}
+footer section.top h1 {
+  justify-content: center;
+}
+footer section.bottom p {
+  color: #7d7d7d;
+  font-size: 11px;
+}
+#schedule .wrapper .container {
+  flex-wrap: wrap;
+}
+#schedule .wrapper .container .left {
+  width: 90%;
+  margin: 0 auto;
+}
+#schedule .wrapper .container .right {
+  width: 90%;
+  margin: 0 auto;
+  /* text-align: center; */
+}
+#monitor .wrapper .container {
+  flex-wrap: wrap;
+  flex-direction: column-reverse;
+}
+#monitor .wrapper .container .left {
+  width: 90%;
+  margin: 0 auto;
+}
+#monitor .wrapper .container .right {
+  width: 90%;
+  margin: 0 auto;
+}
+#schedule {
+  padding: 20px 0;
+}
+
+
+}
